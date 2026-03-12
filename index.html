@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martín Fernández Méndez | Diseño y Pedagogía</title>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #40E0D0;
+            --background-color: #F4F6F7;
+            --text-color: #1A1A1A;
+            --font-heading: 'Helvetica', Arial, sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-body); color: var(--text-color); background-color: var(--background-color); line-height: 1.6; }
+        header { background: #fff; padding: 20px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #ddd; }
+        nav { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        nav a { text-decoration: none; color: var(--primary-color); font-weight: 600; font-family: var(--font-heading); }
+        section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        h1, h2 { font-family: var(--font-heading); color: var(--primary-color); }
+        .hero { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; }
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 24px; border-radius: 14px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .social-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+        .social-card { display: flex; align-items: center; gap: 16px; padding: 20px; border-radius: 12px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid rgba(0,0,0,0.08); color: var(--text-color); }
+        .social-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+        .social-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background-color: #E1306C; }
+        .social-icon svg { width: 24px; height: 24px; fill: white; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">Martín Fernández Méndez</a>
+            <div>
+                <a href="#home">Home</a> | 
+                <a href="#proyectos">Mis proyectos</a> | 
+                <a href="#blog">Blog</a> | 
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <img src="https://raw.githubusercontent.com/ilPostinob0t/jb-martin-fernandez/main/assets/profile.jpg" alt="Martín Fernández Méndez" class="hero-img">
+            <div class="hero-text">
+                <h1>Martín Fernández Méndez: Diseño, tecnología y pedagogía en convergencia.</h1>
+                <p style="font-style: italic; margin-top: 10px;">Diseñador Industrial y educador comprometido con la innovación aplicada y la formación de nuevas generaciones.</p>
+                <p style="margin-top: 20px;">Mi práctica profesional se define por la intersección entre la rigurosidad del diseño industrial y la vocación por la docencia. Como Licenciado en la disciplina y Magíster en Pedagogía Universitaria, entiendo la educación no como una transmisión lineal, sino como un proceso de construcción colectiva que busca potenciar el pensamiento crítico de los futuros diseñadores.</p>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>Docencia Universitaria</h3>
+                    <p>Formación integral en diseño y gestión de proyectos.</p>
+                    <p><strong>Highlight:</strong> Titular de Incubadora de Proyectos, Diseño Industrial 1 y Práctica Profesional Supervisada.</p>
+                </div>
+                <div class="card">
+                    <h3>Desarrollo de Tecnologías</h3>
+                    <p>Ingeniería de soluciones tecnológicas y consultoría estratégica.</p>
+                    <p><strong>Highlight:</strong> Experiencia en escalabilidad industrial tras haber fundado una empresa de impresoras 3D.</p>
+                </div>
+                <div class="card">
+                    <h3>Colaboración Grupo Mondongo</h3>
+                    <p>Diseño y soporte técnico para proyectos de arte contemporáneo.</p>
+                    <p><strong>Highlight:</strong> Colaboración creativa con uno de los colectivos artísticos más prestigiosos a nivel internacional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="card">
+                <h3>Bienvenidos a mi espacio digital</h3>
+                <p>Próximamente estaré compartiendo reflexiones sobre diseño, educación y tecnología.</p>
+                <a href="#">Más entradas próximamente.</a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/catedrafernandezmendez" target="_blank" class="social-card">
+                    <div class="social-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+                    <div class="social-info">
+                        <span class="social-name">Instagram</span>
+                        <span class="social-handle">@catedrafernandezmendez</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Martín Fernández Méndez</p>
+        <p>Este sitio fue creado con <a href="https://ilPostinob0t.github.io">Il Postino Bot</a>.</p>
+        <p>Una casa digital viva, armada desde conversación.</p>
+        <p><a href="https://cafecito.app/ilpostino">☕ Invitame un café</a></p>
+    </footer>
+</body>
+</html>
